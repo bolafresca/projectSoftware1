@@ -29,7 +29,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-hora-admin.css" rel="stylesheet">
+    <link href="assets/css/style-list-student.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Mentor - v4.7.0
@@ -45,31 +45,56 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul>
-            <li><a href="admin-menu.html">Inicio</a></li>
-            <li><a href="student-menu.html">Estudiantes</a></li>
-            <li><a href="teacher-menu.html">Docentes</a></li>
-        </nav><!-- .navbar -->
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
 
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="courses.html" class="get-started-btn">Get Started</a>
 
         </div>
-    </header>
-    <!-- End Header -->
+    </header><!-- End Header -->
 
     <div id="title-admin">
         <h1>
             ADMINISTRADOR
         </h1>
         <p>
-            Asignar horarios al docente
+            Asignar horarios a estudiantes
         </p>
     </div>
-
+    
     <section id="asign-hora">
 
         <div id="add-horario">
@@ -81,9 +106,9 @@
                 <div class="input-group mb-3">
                     <select class="form-select" id="inputGroupSelect02">
                         <option selected>Nombre</option>
-                        <option value="1">Juan Antonio Nariño</option>
-                        <option value="2">Pedro Infante Cervantes</option>
-                        <option value="3">Antonio Mallorca Ruiz</option>
+                        <option value="1">El Brayan Stiven</option>
+                        <option value="2">Liliana Mareti Puils</option>
+                        <option value="3">Ronaldo Dos Santos</option>
                     </select>
                     <label class="input-group-text" for="inputGroupSelect02">Disponibles</label>
                 </div>
@@ -112,24 +137,18 @@
                 </div>
             </div>
 
-            <div class="inputs-data d-flex text-center">
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Fecha: </h4>
-                    </label>
-                    <input type="date" id="date">
-                </div>
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Hora inicio: </h4>
-                    </label>
-                    <input type="time" id="time">
-                </div>
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Hora salida: </h4>
-                    </label>
-                    <input type="time" id="time">
+            <div class="inputs-data">
+                <label for="names">
+                    <h4>Horario:</h4>
+                </label>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Lunes, 1 de Marzo, 02:00pm - 04:00pm</option>
+                        <option value="1">Lunes, 23 de Marzo, 02:00pm - 04:00pm</option>
+                        <option value="2">Lunes, 23 de Marzo, 04:00pm - 06:00pm</option>
+                        <option value="3">Lunes, 24 de Marzo, 06:00am - 08:00am</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Disponibles</label>
                 </div>
             </div>
 
@@ -149,21 +168,21 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Darwin Perez Nuñez</th>
-                    <td>188724616</td>
-                    <td>Calculo IV</td>
+                    <th scope="row">Juan Ameri Torres</th>
+                    <td>1241543534</td>
+                    <td>Calculo III</td>
                     <td>Lunes, 23 de Marzo</td>
                     <td>02:00pm - 04:00pm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Mirito Tomar Luis</th>
+                    <th scope="row">Marina Del Bariio</th>
                     <td>124241253</td>
                     <td>Programación IV</td>
                     <td>Lunes, 23 de Marzo</td>
                     <td>04:00pm - 06:00pm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Benito Luis Camela</th>
+                    <th scope="row">Torcoro Mane Lina</th>
                     <td>532425242</td>
                     <td>Estadistica I</td>
                     <td>Martes, 24 de Marzo</td>

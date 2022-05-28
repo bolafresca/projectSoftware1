@@ -1,0 +1,45 @@
+#title-admin{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#header{
+    position: initial !important;
+}
+
+#asign-hora{
+    width: 100%;
+    height: auto;
+    padding: 2% 5% 5% 5%;
+}
+
+#add-horario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.inputs-data{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#asign-hora input[type="submit"]{
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-bottom: 8%;
+    height: 40px;
+    width: 30%;
+    background: #5fcf80;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#asign-hora input[type="submit"]:hover{
+    background-color: rgb(58, 193, 98);
+    cursor: pointer;
+}
