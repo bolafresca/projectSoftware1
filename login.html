@@ -42,11 +42,19 @@
 <body>
     <div class="login-box">
         <!-- <img class="avatar" src="assets/img/login/playstation.png" alt=""> -->
-        <i class='bx bxs-user bx-tada avatar' ></i>
+        <i class='bx bxs-user bx-tada avatar'></i>
 
         <h1>Iniciar sesión</h1>
 
         <form>
+
+            <label for="rol">Su rol:</label>
+            <select class="form-select" id="inputGroupSelect02">
+                <option selected>Rol</option>
+                <option value="1">Administrador</option>
+                <option value="2">Docente</option>
+                <option value="3">Estudiante</option>
+            </select>
 
             <label for="correo">Correo</label>
             <input type="email" placeholder="example@gmail.com">
@@ -57,7 +65,7 @@
             <input type="submit" value="log in">
 
             <div style="text-align: center;">
-                <a href="#">Olvidé mi contraseña</a><br>
+                <a href="change-password.html">Olvidé mi contraseña</a><br>
             </div>
 
             <!-- <a href="#">No tengo una cuenta</a> -->

@@ -39,7 +39,7 @@ body{
 .login-box h1{
 
     margin: 0;
-    padding: 0 0 10px;
+    /* padding: 0 0 10px; */
     text-align: center;
     font-size: 30px;
 
@@ -88,7 +88,7 @@ body{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: rgb(131, 120, 120);
+    color: black;
     margin: auto;
     transition: 0.3s;
 }
@@ -99,4 +99,8 @@ body{
 
 .bxs-user:before {
     font-size: 90px;
+}
+
+#inputGroupSelect02:hover{
+    cursor: pointer;
 }
