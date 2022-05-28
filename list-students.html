@@ -29,7 +29,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-hora-admin.css" rel="stylesheet">
+    <link href="assets/css/style-list-student.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Mentor - v4.7.0
@@ -91,10 +91,10 @@
             ADMINISTRADOR
         </h1>
         <p>
-            Asignar horarios al docente
+            Asignar horarios a estudiantes
         </p>
     </div>
-
+    
     <section id="asign-hora">
 
         <div id="add-horario">
@@ -106,9 +106,9 @@
                 <div class="input-group mb-3">
                     <select class="form-select" id="inputGroupSelect02">
                         <option selected>Nombre</option>
-                        <option value="1">Juan Antonio Nariño</option>
-                        <option value="2">Pedro Infante Cervantes</option>
-                        <option value="3">Antonio Mallorca Ruiz</option>
+                        <option value="1">El Brayan Stiven</option>
+                        <option value="2">Liliana Mareti Puils</option>
+                        <option value="3">Ronaldo Dos Santos</option>
                     </select>
                     <label class="input-group-text" for="inputGroupSelect02">Disponibles</label>
                 </div>
@@ -137,24 +137,18 @@
                 </div>
             </div>
 
-            <div class="inputs-data d-flex text-center">
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Fecha: </h4>
-                    </label>
-                    <input type="date" id="date">
-                </div>
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Hora inicio: </h4>
-                    </label>
-                    <input type="time" id="time">
-                </div>
-                <div style="width: 50%;">
-                    <label for="names">
-                        <h4>Hora salida: </h4>
-                    </label>
-                    <input type="time" id="time">
+            <div class="inputs-data">
+                <label for="names">
+                    <h4>Horario:</h4>
+                </label>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Lunes, 1 de Marzo, 02:00pm - 04:00pm</option>
+                        <option value="1">Lunes, 23 de Marzo, 02:00pm - 04:00pm</option>
+                        <option value="2">Lunes, 23 de Marzo, 04:00pm - 06:00pm</option>
+                        <option value="3">Lunes, 24 de Marzo, 06:00am - 08:00am</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Disponibles</label>
                 </div>
             </div>
 
@@ -174,21 +168,21 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Darwin Perez Nuñez</th>
-                    <td>188724616</td>
-                    <td>Calculo IV</td>
+                    <th scope="row">Juan Ameri Torres</th>
+                    <td>1241543534</td>
+                    <td>Calculo III</td>
                     <td>Lunes, 23 de Marzo</td>
                     <td>02:00pm - 04:00pm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Mirito Tomar Luis</th>
+                    <th scope="row">Marina Del Bariio</th>
                     <td>124241253</td>
                     <td>Programación IV</td>
                     <td>Lunes, 23 de Marzo</td>
                     <td>04:00pm - 06:00pm</td>
                 </tr>
                 <tr>
-                    <th scope="row">Benito Luis Camela</th>
+                    <th scope="row">Torcoro Mane Lina</th>
                     <td>532425242</td>
                     <td>Estadistica I</td>
                     <td>Martes, 24 de Marzo</td>
