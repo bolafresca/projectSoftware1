@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>About - Mentor Bootstrap Template</title>
+    <title>Inicio de sesión</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -57,12 +57,12 @@
             </select>
 
             <label for="correo">Correo</label>
-            <input type="email" placeholder="example@gmail.com">
+            <input id="user" type="email" placeholder="ejemplo@gmail.com">
 
             <label for="password">Contraseña</label>
-            <input type="password" placeholder="Ingrese contraseña">
+            <input id="password" type="password" placeholder="Ingresar contraseña">
 
-            <input type="submit" value="Iniciar Sesión">
+            <input onclick="Redirect()" type="submit" value="Iniciar Sesión">
 
             <div style="text-align: center;">
                 <a href="change-password.html">Olvidé mi contraseña</a><br>
@@ -72,6 +72,7 @@
 
         </form>
     </div>
+    <script src="./assets/js/login.js"></script>
 </body>
 
 </html>
