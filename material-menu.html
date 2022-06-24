@@ -49,14 +49,14 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
 
         <ul>
-          <li><a class="active" href="#student-courses">Mis Asesorías</a></li>
+          <li><a class="active" href="student-menu.html">Mis Asesorías</a></li>
           <li class="dropdown"><a href="#"><span>Material Académico</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="material-menu.html">Programación Javascript</a></li>
-              <li><a href="material-menu.html">React desde cero</a></li>
+              <li><a href="#JavascriptDesdeCero">Programación Javascript</a></li>
+              <li><a href="#ReactDesdeCero">React desde cero</a></li>
             </ul>
           </li>
-          <li><a href="#diary">Horario</a></li>
+          <li><a href="student-menu.html">Horario</a></li>
           <li><a href="#diary">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_44_41)">
@@ -80,6 +80,7 @@
 
   <main id="main" data-aos="fade-in">
 
+    
     <!-- ======= Breadcrumbs ======= -->
     <div id="student-courses" class="breadcrumbs">
       <div class="container">
@@ -87,24 +88,45 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Popular Courses Section ======= -->
+
+    <div class="container mt-4" data-aos="fade-up">
+
+      <div class="d-flex">
+          <img
+          src="./assets/img/trainers/trainer-3.jpg"
+          alt="John Doe"
+          class="me-3 rounded-circle"
+          style="width: 60px; height: 60px;"
+          />
+          <div>
+          <h5 class="fw-bold">
+              Brayan Gómez
+              <small class="text-muted">Publicado en Febrero 19, 2022</small>
+          </h5>
+          <p>
+              Buenos dias a todos!!👩‍💻👩‍💻💻💻 </br> Anexo el material disponible para la primera semana de asesorías.
+          </p>
+          </div>
+      </div>
+
+      <!-- ======= Popular Courses Section ======= -->
     <section class="courses">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Asesorías</h2>
-          <p>Mis Asesorías</p>
+          <h2>Material</h2>
+          <p>React desde cero</p>
         </div>
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
-              <img src="assets/img/course-2.png" class="img-fluid" alt="...">
+              <img src="assets/img/Material/Material1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
 
-                <h3><a href="material-menu.html">Desarrollo web con Javascript</a></h3>
-                <p>Formación en desarrollo web profesional con Javascript.</p>
+                <h3><a href="course-details.html">Fundamentos con Javascript</a></h3>
+                <p>Fundamentos necesarios en Javascript para trabajar React.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
@@ -118,14 +140,15 @@
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div> 
+          <!-- End Course Item -->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
-              <img src="assets/img/course-3.png" class="img-fluid" alt="...">
+              <img src="assets/img/Material/Material2.png" class="img-fluid" alt="...">
               <div class="course-content">
-                <h3><a href="material-menu.html">Aprende React desde cero</a></h3>
-                <p>Formación en el framework Javascript más popular.</p>
+                <h3><a href="https://youtu.be/pKiXcvkzMl8">Consejos para aprender a programar</a></h3>
+                <p>Video formación consejos para aprender a programar.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
@@ -141,47 +164,23 @@
             </div>
           </div> <!-- End Course Item-->
         </div>
+        
+        <div class="section-title mt-4">
+          <h2>Videos</h2>
+          <p>Material videos</p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pKiXcvkzMl8" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       </div>
     </section><!-- End Popular Courses Section -->
 
 
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Horario</h2>
-            <p>Mis Horarios</p>
-        </div>
-
-        <section id="diary">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cedula</th>
-                        <th scope="col">Materia</th>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Darwin Perez Nuñez</th>
-                        <td>188724616</td>
-                        <td>React desde cero</td>
-                        <td>Lunes, 23 de Marzo</td>
-                        <td>02:00pm - 04:00pm</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Darwin Perez Nuñez</th>
-                        <td>188724616</td>
-                        <td>Programación Javascript</td>
-                        <td>Lunes, 23 de Marzo</td>
-                        <td>04:00pm - 06:00pm</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
     </div>
+
+
+    
 
   </main><!-- End #main -->
 

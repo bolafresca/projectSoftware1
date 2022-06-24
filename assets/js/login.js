@@ -3,7 +3,7 @@ function Redirect() {
     let user = document.getElementById('user').value;
     let password = document.getElementById('password').value;
 
-    if (user == "estudianteON" && password == "123456789") {
+    if (user == "estudiante" && password == "1234") {
         itsOk = true;
     } else {
         itsOk = false;
