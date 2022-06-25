@@ -1,39 +1,19 @@
 function Redirect() {
+    
     let itsOk;
-    // let itsOkadmin;
     let user = document.getElementById('user').value;
     let password = document.getElementById('password').value;
 
     if (user == "estudiante" && password == "1234") {
-        itsOk = true;
+        location.href = "student-menu.html";
     } else {
         itsOk = false;
     }
 
-    if (itsOk==true) {
-        location.href = "student-menu.html";
+    if (user == "admin" && password == "12345") {
+        location.href = "admin-menu.html";
+    } else {
+        itsOk = false;
     }
-
-    
-    //segundo
-    //  if (user == "admin" && password == "12345") {
-    //      itsOkadmin = true;
-    //  } else {
-    //      itsOkadmin = false;
-    // }
-
-    //  if (itsOkadmin=true) {
-    //     location.href = "admin-menu.html";
-    // }
-    //tercero
-    // if (user == "estudiante" && password == "1234") {
-    //     itsOk = true;
-    // } else {
-    //     itsOk = false;
-    // }
-
-    // if (itsOk==true) {
-    //     location.href = "student-menu.html";
-    // }
     
 }
